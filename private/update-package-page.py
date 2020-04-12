@@ -10,7 +10,7 @@ if __name__ == "__main__":
     package_actual_name: str = sys.argv[3]
     package_project_name: str = sys.argv[4]
     package_source_directory: str = sys.argv[5]
-
+    package_source_directory = package_source_directory[:-1] if package_source_directory.endswith("/") else package_source_directory 
 
     with open("./" + package_name + "/versions.json", "r+") as f:
         versions_json = json.load(f)
