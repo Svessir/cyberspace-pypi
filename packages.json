@@ -1,1 +1,1 @@
-{"packages": ["cyberspace-iot-moduleframework", "cyberspace-iot-runtimeenvironment", "cyberspace-iot-apiruntimeenvironment"]}
+{"packages": ["cyberspace-iot-moduleframework", "cyberspace-iot-runtimeenvironment", "cyberspace-iot-apiruntimeenvironment", "cyberspace-iot-azureiotedgeruntimeenvironment"]}
