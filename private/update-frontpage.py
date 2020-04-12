@@ -15,7 +15,7 @@ if __name__ == "__main__":
         packages_json["packages"].append(package_name)
         os.mkdir(package_name)
         with open(package_name + "/versions.json", "w") as f2:
-            f2.write("{ \"versions\": [] }")
+            f2.write("{}")
         f.write(json.dumps(packages_json))
     
     folder_structure_html = ""
