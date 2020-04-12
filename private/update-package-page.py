@@ -19,7 +19,7 @@ if __name__ == "__main__":
             print("version has already been uploaded", file=sys.stderr)
             exit(1)
         sub_directory: str = "" if package_source_directory == "." else f"subdirectory={package_source_directory}&"
-        versions_json[package_version] = f"<a href=\"git+ssh://git@gitlab.com/{package_project_name}@{package_version}{sub_directory}#egg={package_actual_name}-{package_version}\">{package_actual_name}-{package_version}</a>"
+        versions_json[package_version] = f"<a href=\"git+ssh://git@gitlab.com/{package_project_name}@{package_version}#{sub_directory}egg={package_actual_name}-{package_version}\">{package_actual_name}-{package_version}</a>"
         f.write(json.dumps(versions_json))
     
     version_list_html: str = ""
